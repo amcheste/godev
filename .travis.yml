@@ -1,0 +1,12 @@
+dist: trusty
+sudo: required
+language: go
+
+services:
+  - docker
+
+script:
+  - make
+
+after_success:
+  - make publish
