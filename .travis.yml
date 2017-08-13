@@ -1,0 +1,11 @@
+dist: trusty
+sudo: required
+
+services:
+  - docker
+
+script:
+  - make
+
+after_success:
+  - make publish
